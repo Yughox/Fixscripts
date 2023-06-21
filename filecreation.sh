@@ -1,4 +1,5 @@
 #!/bin/bash
+#testing123.......
 echo "What file are you looking for?
 Please input the file name or file directoy path."
 read file
@@ -6,11 +7,14 @@ read file
 	then 
 	echo "Printing details of $file"
 	sleep 2
-	echo `cat -n $name`
+	cat -n $file
   elif [ -f != 0 ]
         then
+	echo "File does not exist, proceeding to next step..."
+	sleep 2
 	PS3="Do you want to create the missing file?"
 	select opt in yes no
+#	PS3="Do you want to create the missing file?"
 	do 
 		case $opt in
 			yes) 
