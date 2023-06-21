@@ -2,12 +2,12 @@
 #testing123.......
 echo "What file are you looking for?
 Please input the file name or file directoy path."
-read file
-  if [ -f $file ]
+read -r file
+  if [ -f "$file" ]
 	then 
 	echo "Printing details of $file"
 	sleep 2
-	cat -n $file
+	cat -n "$file"
   elif [ -f != 0 ]
         then
 	echo "File does not exist, proceeding to next step..."
@@ -18,7 +18,7 @@ read file
 	do 
 		case $opt in
 			yes) 
-			   touch $file 
+			   touch "$file" 
 			   echo "Creating file..."
 			   sleep 2
 			   echo "file created"
