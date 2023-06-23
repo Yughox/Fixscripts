@@ -8,7 +8,7 @@ while :
              then
              echo "This site is online"
              break
-           else 
+             else 
 	     echo "Site cant be reached please check URL"
 	   fi
          sleep 5
