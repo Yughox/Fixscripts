@@ -3,7 +3,7 @@
 for i in {1..10};
 do 
 	if [[ "$i" = "2" ]];
-	then continue
+	then break #continue
 	fi 
 echo "Number: $i"
 
